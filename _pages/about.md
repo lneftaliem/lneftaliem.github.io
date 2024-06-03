@@ -7,22 +7,25 @@ redirect_from:
   - /about.html
 ---
 
-I'm currently a second-year PhD candidate at Stanford University in Environment and Resources (E-IPER)! Additionally, I'm a Knight-Hennessy Scholar and National Science Foundation Graduate Research Fellow. 
+I'm currently a second-year PhD candidate at Stanford University in Environment and Resources (E-IPER)! Additionally, I'm a [Knight-Hennessy Scholar](https://knight-hennessy.stanford.edu/people/leona-neftaliem) and National Science Foundation Graduate Research Fellow! 
 
 As we anticipate rapid urbanization globally under increasing climate instability, my dissertation aims to better understand and mitigate the social and ecological challenges
-observed in cities. Urban sustainability challenges are incredibly complex, broad, and interdisciplinary; I aim to showcase the diversity of urban ecosystems within my proposed
+observed in cities. 
+Urban sustainability challenges are incredibly complex, broad, and interdisciplinary; I aim to showcase the diversity of urban ecosystems within my proposed
 chapters. I approach these topics by integrating remote sensing, quantitative surveys, and innovative environmental engineering techniques at different scales and in different cities.
 
-![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg)[:align-center width="800px"}
+![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg))
+[Artwork by Taylor Smith-Hams](http://www.taylorsmithhams.com/charming-vignettes.html)
+
 
 Experience
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Previously, I worked as a research technician at the Smithsonian Environmental Research Center. Specifically, I worked in the [Technology in Ecology Lab](https://serc.si.edu/labs/technology-in-ecology), designing technologically innovative climate change experiments and developing novel low-cost sensors to monitor diverse environmental phenomena. 
+
+You can find Technology in Ecology projects [here](https://serc.si.edu/labs/technology-in-ecology/projects)!
+
+![Leona in the field!](/images/serc_field.jpg){; .alight-right width="800px"} 
+
 
 Site-wide configuration
 ------
