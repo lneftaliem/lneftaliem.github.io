@@ -11,6 +11,8 @@ I'm currently a second-year PhD candidate at Stanford University in Environment 
 
 As we anticipate rapid urbanization globally under increasing climate instability, my dissertation aims to better understand and mitigate the social and ecological challenges
 observed in cities. 
+
+
 Urban sustainability challenges are incredibly complex, broad, and interdisciplinary; I aim to showcase the diversity of urban ecosystems within my proposed
 chapters. I approach these topics by integrating remote sensing, quantitative surveys, and innovative environmental engineering techniques at different scales and in different cities.
 
@@ -24,7 +26,7 @@ Previously, I worked as a research technician at the Smithsonian Environmental R
 
 You can find Technology in Ecology projects [here](https://serc.si.edu/labs/technology-in-ecology/projects)!
 
-![Leona in the field!](/images/serc_field.jpg){: style="float: right; width: 400px;"}
+<img src="/images/serc_field.jpg" alt="Leona in the field!" style="float: right; width: 400px;">
 
 
 Site-wide configuration
