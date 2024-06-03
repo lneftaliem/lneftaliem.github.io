@@ -6,7 +6,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+About
+======
 I'm currently a second-year PhD candidate at Stanford University in Environment and Resources (E-IPER)! Additionally, I'm a [Knight-Hennessy Scholar](https://knight-hennessy.stanford.edu/people/leona-neftaliem) and National Science Foundation Graduate Research Fellow! 
 
 As we anticipate rapid urbanization globally under increasing climate instability, my dissertation aims to better understand and mitigate the social and ecological challenges
@@ -21,7 +22,7 @@ I approach these topics by integrating remote sensing, quantitative surveys, and
 ![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg)
 [Charming Vignettes by Taylor Smith-Hams](http://www.taylorsmithhams.com/charming-vignettes.html)
 
-======
+<br>
 
 Selected Research Experience
 ======
