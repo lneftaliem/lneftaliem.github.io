@@ -1,13 +1,13 @@
 ---
-title: "Paper Title Number 1"
+title: "Measuring the Carbon (and Other) Benefits of Climate-Smart Forestry Practices"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /files/carbon_report.pdf
+excerpt: 'Forests provide a critically-important nature-based tool to combat the climate crisis. This report addresses the U.S.’s opportunities to deploy climate-smart forestry practices to remove additional quantities of climate-harming carbon from the atmosphere. The report notes that the inability to reliably track and quantify carbon removals and other co-benefits from forestry practices is holding back wider adoption of such practices. It recommends specific steps that the Administration should take to advance the measurement, monitoring, verification and reporting of carbon removals and other benefits associated with climate-smart forestry practices. With the backing of solid measurement and monitoring, governmental authorities and private parties can more confidently incentivize climate-smart forestry practices through a variety of potential mechanisms such as conservation grants, procurement preferences, premium pricing for climate-smart forestry products and better functioning carbon markets. Prime forestry-related carbon removal opportunities in the U.S. include agroforestry, reforestation, urban forestry, improved forest management and long-lived wood products.'
+date: July 11, 2023
+#venue: 'Journal 1'
+#slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+paperurl: 'http://lneftaliem.github.io/files/carbon_report.pdf'
+citation: 'David J. Hayes, Stephen Ferruolo, David Haines, Katelyn McEvoy, Leona Neftaliem, Lisa Roberds, Siddharth Sachdeva, Celina Scott-Buechler, Angela Tsao, Katie Vogelheim, Brad Ward, Callie Walker, Benjamin Zehr, Measuring the Carbon (and Other) Benefits of Climate-Smart Forestry Practices (Policy Lab: Harvesting Climate Benefits from Agriculture and Forestry Practices (808Y); Teaching/Supervising Team: David J. Hayes).'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
