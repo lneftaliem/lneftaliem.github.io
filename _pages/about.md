@@ -6,6 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<br>
+
+
 About
 ======
 I'm currently a second-year PhD candidate at Stanford University in Environment and Resources (E-IPER)! Additionally, I'm a [Knight-Hennessy Scholar](https://knight-hennessy.stanford.edu/people/leona-neftaliem) and National Science Foundation Graduate Research Fellow! 
