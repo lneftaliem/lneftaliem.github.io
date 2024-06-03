@@ -24,7 +24,7 @@ I approach these topics by integrating remote sensing, quantitative surveys, and
 
 
 
-Experience
+Selected Research Experience
 ======
 <img src="/images/serc_field.jpg" alt="Leona in the field!" style="float: right; width: 400px;">
 
