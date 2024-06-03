@@ -14,8 +14,8 @@ observed in cities.
 Urban sustainability challenges are incredibly complex, broad, and interdisciplinary; I aim to showcase the diversity of urban ecosystems within my proposed
 chapters. I approach these topics by integrating remote sensing, quantitative surveys, and innovative environmental engineering techniques at different scales and in different cities.
 
-![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg))
-[Artwork by Taylor Smith-Hams](http://www.taylorsmithhams.com/charming-vignettes.html)
+![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg)
+[Charming Vignettes by Taylor Smith-Hams](http://www.taylorsmithhams.com/charming-vignettes.html)
 
 
 Experience
@@ -24,7 +24,7 @@ Previously, I worked as a research technician at the Smithsonian Environmental R
 
 You can find Technology in Ecology projects [here](https://serc.si.edu/labs/technology-in-ecology/projects)!
 
-![Leona in the field!](/images/serc_field.jpg){; .alight-right width="800px"} 
+![Leona in the field!](/images/serc_field.jpg){style="float: right; width: 400px;"}
 
 
 Site-wide configuration
