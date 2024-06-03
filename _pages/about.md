@@ -24,7 +24,7 @@ Previously, I worked as a research technician at the Smithsonian Environmental R
 
 You can find Technology in Ecology projects [here](https://serc.si.edu/labs/technology-in-ecology/projects)!
 
-![Leona in the field!](/images/serc_field.jpg){style="float: right; width: 400px;"}
+![Leona in the field!](/images/serc_field.jpg){: style="float: right; width: 400px;"}
 
 
 Site-wide configuration
