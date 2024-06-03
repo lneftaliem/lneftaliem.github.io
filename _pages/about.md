@@ -21,8 +21,7 @@ I approach these topics by integrating remote sensing, quantitative surveys, and
 ![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg)
 [Charming Vignettes by Taylor Smith-Hams](http://www.taylorsmithhams.com/charming-vignettes.html)
 
-
-
+======
 
 Selected Research Experience
 ======
