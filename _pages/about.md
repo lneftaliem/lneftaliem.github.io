@@ -11,7 +11,7 @@ redirect_from:
 
 About
 ======
-I'm currently a second-year PhD candidate at Stanford University in Environment and Resources (E-IPER)! Additionally, I'm a [Knight-Hennessy Scholar](https://knight-hennessy.stanford.edu/people/leona-neftaliem) and National Science Foundation Graduate Research Fellow. I'm co-advised by Profs. [Chris Field](https://fieldlab.stanford.edu/) and [Rob Jackson](https://jacksonlab.stanford.edu/), and I'm also a member of Prof. Nicole Ardoin's [Social Ecology Lab](https://socialecology.stanford.edu/).
+I'm currently a second-year PhD candidate at Stanford University in Environment and Resources (E-IPER)! Additionally, I'm a [Knight-Hennessy Scholar](https://knight-hennessy.stanford.edu/people/leona-neftaliem) and National Science Foundation Graduate Research Fellow. I'm co-advised by Profs. [Chris Field](https://fieldlab.stanford.edu/) and [Rob Jackson](https://jacksonlab.stanford.edu/), and I'm also a member of Prof. [Nicole Ardoin's Social Ecology Lab](https://socialecology.stanford.edu/).
 
 As we anticipate rapid urbanization globally under increasing climate instability, my dissertation aims to better understand and mitigate the social and ecological challenges
 observed in cities. 
