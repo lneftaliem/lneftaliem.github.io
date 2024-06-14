@@ -6,15 +6,11 @@ main:
     url: /files/CV_LN.pdf
 
 
-- title: "Awards" 
-    url: /awards/
-
-
   - title: "Publications" 
     url: /publications/
     
- #- title: "Projects"
- #   url: /projects/
+ - title: "Projects"
+    url: /projects/
 
   #- title: "Talks"
   #  url: /talks/    
