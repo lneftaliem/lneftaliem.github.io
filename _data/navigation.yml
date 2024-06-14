@@ -5,6 +5,11 @@ main:
     #url: /cv/
     url: /files/CV_LN.pdf
 
+
+- title: "Awards" 
+    url: /awards/
+
+
   - title: "Publications" 
     url: /publications/
     
