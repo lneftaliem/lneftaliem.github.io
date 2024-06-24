@@ -40,6 +40,6 @@ Previously, I worked as a research technician at the Smithsonian Environmental R
 
 You can find the Technology in Ecology projects that I worked on [here](https://serc.si.edu/labs/technology-in-ecology/projects)!
 
-<img src="/images/si_logo_1.png" alt="Smithsonian Environmental Research Center logo" style="float: left; width: 100px;">
+<img src="/images/si_logo_1.png" alt="Smithsonian Environmental Research Center logo" sstyle="display: block; margin: 0 auto; width: 200px;">
 
 
