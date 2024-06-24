@@ -31,7 +31,7 @@ I approach these topics by integrating remote sensing, quantitative surveys, and
 
 <br>
 
-Selected Research Experience <img src="/images/si_ERC_rgb_verical_color.png" alt="Smithsonian Environmental Research Center logo" style="float: right; width: 200px;">
+Selected Research Experience <img src="/images/si_logo_1.png" alt="Smithsonian Environmental Research Center logo" style="float: right; width: 200px;">
 ====== 
 <img src="/images/serc_field.jpg" alt="Leona in the field!" style="float: right; width: 400px;">
 
