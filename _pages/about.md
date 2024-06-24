@@ -31,7 +31,7 @@ I approach these topics by integrating remote sensing, quantitative surveys, and
 
 <br>
 
-Selected Research Experience <img src="/images/si_logo_1.png" alt="Smithsonian Environmental Research Center logo" style="float: right; width: 100px;">
+Selected Research Experience
 ====== 
 <br>
 
@@ -42,7 +42,7 @@ Previously, I worked as a research technician at the Smithsonian Environmental R
 
 You can find the Technology in Ecology projects that I worked on [here](https://serc.si.edu/labs/technology-in-ecology/projects)!
 
-
+<img src="/images/si_logo_1.png" alt="Smithsonian Environmental Research Center logo" style="float: center; width: 100px;">
 
 
 
