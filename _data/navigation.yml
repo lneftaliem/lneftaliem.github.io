@@ -5,12 +5,11 @@ main:
     #url: /cv/
     url: /files/CV_LN.pdf
 
-
   - title: "Publications" 
     url: /publications/
     
- - title: "Projects"
-    url: /projects/
+ #- title: "Projects"
+ #   url: /projects/
 
   #- title: "Talks"
   #  url: /talks/    
