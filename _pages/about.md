@@ -33,7 +33,7 @@ I approach these topics by integrating remote sensing, quantitative surveys, and
 
 Selected Research Experience
 ====== 
-<div style="text-align: center;">
+<div style="text-align: right;">
     <img src="/images/si_logo_1.png" alt="Smithsonian Environmental Research Center logo" style="width: 100px;">
 </div>
 
