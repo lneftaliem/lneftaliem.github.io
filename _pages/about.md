@@ -26,6 +26,8 @@ chapters.
 
 I approach these topics by integrating remote sensing, quantitative surveys, and innovative environmental engineering techniques at different scales and in different cities.
 
+You can find one of my current projects, in collaboration with the [Environmental Justice Journalism Initiative](https://www.ejji.org) and the Smithsonian Environmental Research Center, [here](https://serc.si.edu/participatory-science/projects/breathe-baltimore-air-quality-monitoring-project)!
+
 ![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg)
 [Charming Vignettes by Taylor Smith-Hams](http://www.taylorsmithhams.com/charming-vignettes.html)
 
