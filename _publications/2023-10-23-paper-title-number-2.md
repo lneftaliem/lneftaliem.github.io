@@ -5,4 +5,4 @@ date: 2024-10-23
 venue: Knight-Hennessy Scholar Insights
 ---
 
-[Breathing life into ghost towns: Harnessing the promise of €1 homes](https://knight-hennessy.stanford.edu/news/breathing-life-ghost-towns-harnessing-promise-eu1-homes)
+**[Breathing life into ghost towns: Harnessing the promise of €1 homes]**(https://knight-hennessy.stanford.edu/news/breathing-life-ghost-towns-harnessing-promise-eu1-homes)
