@@ -8,9 +8,12 @@ main:
   - title: "Publications" 
     url: /publications/
     
- #- title: "Projects"
+ - title: "News"
+    url: /news/
+ 
+#- title: "Projects"
  #   url: /projects/
-
+ 
   #- title: "Talks"
   #  url: /talks/    
 
