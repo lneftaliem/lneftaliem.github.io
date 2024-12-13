@@ -1,12 +1,12 @@
 ---
 layout: archive
-title: "News"
-permalink: /news/
+title: "Press"
+permalink: /press/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.news reversed %}
+{% for post in site.press reversed %}
   {% include archive-single.html %}
 {% endfor %}
