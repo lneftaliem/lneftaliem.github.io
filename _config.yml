@@ -212,7 +212,7 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  news:
+  press:
     output: true
     permalink: /:collection/:path/
 
@@ -272,10 +272,10 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-  # _news
+  # _press
   - scope:
       path: ""
-      type: news
+      type: press
     values:
       layout: single
       author_profile: true
