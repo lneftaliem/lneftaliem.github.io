@@ -15,24 +15,20 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
-    <!-- Add the image section -->
-    {% if post.image or teaser %}
-      <div class="archive__item-image">
-        <img src=
-          {% if post.image %}
-            {% if post.image contains "://" %}
-              "{{ post.image }}"
-            {% else %}
-              "{{ post.image | prepend: base_path }}"
-            {% endif %}
-          {% elsif teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: base_path }}"
-          {% endif %}
-          alt="{{ title }}">
-      </div>
-    {% endif %}
+   <!-- Add the image section -->
+{% if post.image or teaser %}
+  <div class="archive__item-image">
+    <img src=
+      {% if post.image %}
+        "{{ post.image | relative_url }}"
+      {% elsif teaser contains "://" %}
+        "{{ teaser }}"
+      {% else %}
+        "{{ teaser | prepend: "/images/" | prepend: base_path | relative_url }}"
+      {% endif %}
+      alt="{{ title }}">
+  </div>
+{% endif %}
     
     <!-- Title Section -->
     <h2 class="archive__item-title" itemprop="headline">
