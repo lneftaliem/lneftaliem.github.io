@@ -20,11 +20,15 @@
       <div class="archive__item-image">
         <img src=
           {% if post.image %}
-            "{{ post.image | relative_url }}"
+            {% if post.image contains "://" %}
+              "{{ post.image }}"
+            {% else %}
+              "{{ post.image | prepend: base_path }}"
+            {% endif %}
           {% elsif teaser contains "://" %}
             "{{ teaser }}"
           {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+            "{{ teaser | prepend: base_path }}"
           {% endif %}
           alt="{{ title }}">
       </div>
