@@ -18,15 +18,11 @@
 <!-- Add the image section -->
 {% if post.image or teaser %}
   <div class="archive__item-image">
-    <img src=
-      {% if post.image %}
-        "{{ post.image | relative_url }}"
-      {% elsif teaser contains "://" %}
-        "{{ teaser }}"
-      {% else %}
-        "{{ teaser | prepend: site.baseurl | prepend: '/images/' | relative_url }}"
-      {% endif %}
-      alt="{{ title }}">
+    {% if post.image %}
+      <img src="{{ post.image | relative_url }}" alt="{{ title }}">
+    {% elsif teaser %}
+      {{ teaser | markdownify }}
+    {% endif %}
   </div>
 {% endif %}
     
