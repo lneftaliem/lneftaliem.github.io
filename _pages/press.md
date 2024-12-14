@@ -17,4 +17,3 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-#<img src="/images/imagine_a_world.png" alt="Imagine A World Podcast Logo!" style="float: right; width: 400px;">
