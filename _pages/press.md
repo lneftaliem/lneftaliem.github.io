@@ -25,6 +25,8 @@ author_profile: true
 <br>
 In this episode, pull up a chair alongside members of the 2023 cohort, scholars Sanaa Alam, Hannah Melville-Rea, Leona Neftaliem, Jocelyn Ricard, and Takondwa Semphere, the best of friends who found each other at Denning House. Episode hosts Willie Thompson (2022 cohort) and Ashley Yeh (2024 cohort) interview the group about Knight-Hennessy scholar life, the challenges and changes they have faced in their journeys, and how deep friendship fuels their growth.
 
+<br>
+
 [Baltimore’s Air Quality Exposure, Environmental Justice Journalism Initiative](https://www.ejji.org/baltimores-air-quality-exposure)
 ======
 **August 26, 2024**
