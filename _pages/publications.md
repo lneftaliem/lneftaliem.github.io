@@ -28,9 +28,7 @@ This article explores the paradox of affluent nations offering financial incenti
 <br>
 <br>
 **Recommended citation:** Neftaliem, L. (2024, October 23). Breathing life into ghost towns: Harnessing the promise of €1 homes. Knight-Hennessy Scholar Insights. https://knight-hennessy.stanford.edu/news/breathing-life-ghost-towns-harnessing-promise-eu1-homes.
-
 <br>
-
 [Measuring the Carbon (and Other) Benefits of Climate-Smart Forestry Practices](https://law.stanford.edu/wp-content/uploads/2023/07/Measuring-the-Carbon-and-Other-Benefits-of-Climate-Smart-Forestry-Practices.pdf)
 ======
 **July 11, 2023**
