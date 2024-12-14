@@ -18,7 +18,6 @@ author_profile: true
 
 [Friendship and Belonging as Knight-Hennessy Scholars, Imagine A World Podcast](https://knight-hennessy.stanford.edu/news/friendship-and-belonging-knight-hennessy-scholars)
 ======
-<br>
 Published: December 11, 2024
 <br>
 <div style="text-align: center;">
@@ -29,7 +28,6 @@ In this episode, pull up a chair alongside members of the 2023 cohort, scholars 
 
 [Baltimore’s Air Quality Exposure, Environmental Justice Journalism Initiative](https://www.ejji.org/baltimores-air-quality-exposure)
 ======
-<br>
 Published: August 26, 2024
 <br>
 <div style="text-align: right;">
