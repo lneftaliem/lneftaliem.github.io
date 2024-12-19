@@ -23,9 +23,9 @@ author_profile: true
   <img src="/images/agu24.gif" alt="Leona at AGU 2024" style="width: 400px;">
 </div>
 <br>
-As the world’s largest association of Earth and space scientists, @americangeophysicalunion gathers over 25,000 attendees every year for its annual meeting.
+As the world’s largest association of Earth and space scientists, [@americangeophysicalunion](https://www.instagram.com/americangeophysicalunion/?hl=en) gathers over 25,000 attendees every year for its annual meeting.
 
-Dozens of Stanford scholars including Neftaliem, a @knighthennessy scholar and PhD student in the @social_ecology_lab, Jackson lab, and Global Ecology and Climate Solutions lab, connected and shared their research at the conference last week.
+Dozens of Stanford scholars including Neftaliem, a [@knighthennessy](https://www.instagram.com/KnightHennessy/) scholar and PhD student in the [@social_ecology_lab](https://www.instagram.com/social_ecology_lab/), Jackson lab, and Global Ecology and Climate Solutions lab, connected and shared their research at the conference last week.
 <br>
 
 [Friendship and Belonging as Knight-Hennessy Scholars, Imagine A World Podcast](https://knight-hennessy.stanford.edu/news/friendship-and-belonging-knight-hennessy-scholars)
