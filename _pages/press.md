@@ -4,6 +4,17 @@ title: "Press"
 permalink: /press/
 author_profile: true
 ---
+<!--
+ {% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+ {% endif %}
+-->
+
+{% include base_path %}
+
+{% for post in site.press reversed %}
+  {% include archive-single.html %}
+{% endfor %}
 
 [Meet the 2026 Rising Environmental Leaders](https://woods.stanford.edu/news/meet-2026-rising-environmental-leaders)
 ======
@@ -16,24 +27,6 @@ From climate adaptation to sustainable energy and resilient food systems, todayâ
 
 The 2026 RELP cohort brings together graduate students and postdoctoral scholars from across Stanford, representing fields including engineering, law, biology, communication, and political science.
 <br>
-
----
-layout: archive
-title: "Press"
-permalink: /press/
-author_profile: true
----
-<!--
- {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
- {% endif %}
--->
-
-{% include base_path %}
-
-{% for post in site.press reversed %}
-  {% include archive-single.html %}
-{% endfor %}
 
 [Recap of #AGU24 with PhD student Leona Neftaliem ðŸŒŽ, Stanford Doerr School of Sustainability](https://www.instagram.com/p/DDsofv5SQvy/)
 ======
