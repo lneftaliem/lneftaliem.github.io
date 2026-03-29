@@ -16,6 +16,36 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
+[Meet the 2026 Rising Environmental Leaders](https://woods.stanford.edu/news/meet-2026-rising-environmental-leaders)
+======
+**March 17, 2026**
+<div style="text-align: center;">
+  <img src="/images/relp_2025.jpg" alt="2025 RELP fellows during a policy bootcamp in Washington, DC." style="width: 400px;">
+</div>
+<br>
+From climate adaptation to sustainable energy and resilient food systems, today’s environmental challenges demand solutions that bridge science and policy. The Stanford Woods Institute for the Environment’s Rising Environmental Leaders Program (RELP) helps emerging scholars build the skills and networks needed to translate research into real-world impact.
+
+The 2026 RELP cohort brings together graduate students and postdoctoral scholars from across Stanford, representing fields including engineering, law, biology, communication, and political science.
+<br>
+
+---
+layout: archive
+title: "Press"
+permalink: /press/
+author_profile: true
+---
+<!--
+ {% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+ {% endif %}
+-->
+
+{% include base_path %}
+
+{% for post in site.press reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
 [Recap of #AGU24 with PhD student Leona Neftaliem 🌎, Stanford Doerr School of Sustainability](https://www.instagram.com/p/DDsofv5SQvy/)
 ======
 **December 17, 2024**
