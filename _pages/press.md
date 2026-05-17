@@ -16,6 +16,16 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
+[New air quality sensors are tracking pollution data near Frederick Douglass Tunnel construction](https://www.baltimoresun.com/2026/05/13/west-baltimore-air-quality-sensors/?share=mwehwetssrie2sarbqwn)
+======
+**May 13, 2026**
+<div style="text-align: center;">
+  <img src="/images/aqi_sensors.jpg" alt="The Breathe Baltimore air quality sensors feature lights on the front that show real-time information on air pollutants." style="width: 400px;">
+</div>
+<br>
+Scientists from the Smithsonian Institute have installed 14 new sensors to track air quality in South and West Baltimore.
+<br>
+
 [Meet the 2026 Rising Environmental Leaders](https://woods.stanford.edu/news/meet-2026-rising-environmental-leaders)
 ======
 **March 17, 2026**
