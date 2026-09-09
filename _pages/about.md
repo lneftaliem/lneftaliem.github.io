@@ -37,29 +37,11 @@ redirect_from:
   </div>
 
   <div class="home-about">
-    <p>I'm interested in cities because environmental change is never only ecological or only social. My research looks at these questions from different scales, from mapping urban forests with satellite imagery, to measuring neighborhood air pollution, to studying how climate risk and people's relationships with place shape decisions about where to live.</p>
+    <p>My research looks at environmental change across multiple scales, from mapping urban forests with satellite imagery, to measuring neighborhood air pollution, to studying how climate risk and people's relationships with place shape decisions about where to live.</p>
 
-    <p>Across these projects, I've become increasingly interested in what happens when research leaves academia: how evidence is communicated, how communities and practitioners shape the questions being asked, and how institutions decide which ideas and programs to support.</p>
+    <p>Across these projects, I'm especially interested in how research can be useful beyond academia: how evidence is communicated, how communities and practitioners shape the questions being asked, and how institutions decide which ideas and programs to support.</p>
 
-    <p>I'm a PhD candidate in Stanford University's Emmett Interdisciplinary Program in Environment and Resources (E-IPER), where I'm advised by Chris Field and Rob Jackson. I'm also a Knight-Hennessy Scholar and National Science Foundation Graduate Research Fellow.</p>
-  </div>
-</section>
-
-<section class="home-section" id="research">
-  <div class="section-heading">
-    <p class="section-eyebrow">Research</p>
-    <h2>What I Study</h2>
-  </div>
-
-  <div class="focus-grid">
-    <div class="focus-item">
-      <h3>Climate + Cities</h3>
-      <p>I study how environmental change shapes urban ecosystems and communities, with a particular focus on urban forests, climate risk, adaptation, and migration.</p>
-    </div>
-    <div class="focus-item">
-      <h3>Communities + Environment</h3>
-      <p>I study how environmental benefits and burdens are distributed across neighborhoods, and how community-based research can help us better understand those differences.</p>
-    </div>
+    <p>I'm a PhD candidate in Stanford University's Emmett Interdisciplinary Program in Environment and Resources (E-IPER), advised by Chris Field and Rob Jackson. I'm also a Knight-Hennessy Scholar and National Science Foundation Graduate Research Fellow.</p>
   </div>
 </section>
 
@@ -108,3 +90,4 @@ redirect_from:
 
   <a href="/publications/" class="text-link">View publications and writing →</a>
 </section>
+
