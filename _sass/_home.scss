@@ -27,11 +27,40 @@
 }
 
 .home-hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 2.25rem;
   padding: 5rem 0 4rem;
-  max-width: 900px;
+  max-width: 1080px;
 
   @include breakpoint($large) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.5rem;
     padding: 7rem 0 6rem;
+  }
+}
+
+.home-hero__content {
+  max-width: 640px;
+}
+
+.home-hero__photo {
+  flex: 0 0 auto;
+  width: 148px;
+
+  @include breakpoint($large) {
+    width: 240px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
 
