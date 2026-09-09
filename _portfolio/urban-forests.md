@@ -4,6 +4,10 @@ collection: portfolio
 status: "Manuscript under review"
 order: 1
 featured: true
+image: "/images/projects/urban-forests.jpg"
+image_alt: "Heat map showing relative tree density across San Francisco neighborhoods, from sparse to dense."
+image_credit: "Map: Leona Neftaliem"
+image_fit: "contain"
 skills: "Remote sensing · Deep learning · Urban ecology · Environmental equity"
 ---
 
