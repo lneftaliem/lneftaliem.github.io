@@ -20,6 +20,12 @@
 
     <h3>{{ include.project.title }}</h3>
 
+    {% if include.project.status %}
+      <p class="project-card__status">
+        <em>{{ include.project.status }}</em>
+      </p>
+    {% endif %}
+
     <div class="project-card__description">
       {{ include.project.content }}
     </div>
@@ -33,3 +39,4 @@
   </div>
 
 </article>
+
