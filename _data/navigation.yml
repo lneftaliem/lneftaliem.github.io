@@ -1,30 +1,15 @@
-# main links links
+# main links
+
 main:
 
+  - title: "Work"
+    url: "/#work"
+
+  - title: "Publications & Writing"
+    url: "/publications/"
+
+  - title: "Media & Engagement"
+    url: "/press/"
+
   - title: "CV"
-    #url: /cv/
-    url: /files/CV_LN.pdf
-
-  - title: "Publications" 
-    url: /publications/
-    
-  - title: "Press"
-    url: /press/
-
-#- title: "Projects"
- #   url: /projects/
- 
-  #- title: "Talks"
-  #  url: /talks/    
-
- # - title: "Teaching"
- #   url: /teaching/    
-    
- # - title: "Portfolio"
-  #  url: /portfolio/
-        
- # - title: "Blog Posts"
- #   url: /year-archive/
-    
- # - title: "Guide"
- #   url: /markdown/
+    url: "/files/CV_LN.pdf"
