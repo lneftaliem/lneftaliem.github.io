@@ -3,7 +3,6 @@ title: "Mapping Urban Forests Across North American Cities"
 collection: portfolio
 category: "Climate + Cities"
 status: "Manuscript under review"
-image: "/images/projects/urban-forests.jpg"
 order: 1
 featured: true
 skills: "Remote sensing · Deep learning · Urban ecology · Environmental equity"
