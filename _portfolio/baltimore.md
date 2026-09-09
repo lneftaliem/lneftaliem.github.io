@@ -1,5 +1,5 @@
 ---
-title: "Community Air Quality in Baltimore"
+title: "Community-Engaged Air Quality Monitoring in Baltimore, MD"
 collection: portfolio
 status: "Manuscript under review"
 order: 2
@@ -7,6 +7,7 @@ featured: true
 image: "/images/projects/baltimore.jpg"
 image_alt: "A low-cost air quality sensor deployed in the field, mounted on a fence in a Baltimore park."
 image_credit: "Photo: Lydia LaGorga"
+image_fit: "contain"
 skills: "Community partnerships · Environmental justice · Air quality · Spatial analysis"
 ---
 
