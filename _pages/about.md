@@ -1,47 +1,87 @@
 ---
 permalink: /
-#title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-author_profile: true
-redirect_from: 
+title:
+layout: home
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
-<br>
 
-About
-======
-I'm currently a fourth-year PhD candidate at Stanford University in Environment and Resources (E-IPER)! Additionally, I'm a [Knight-Hennessy Scholar](https://knight-hennessy.stanford.edu/people/leona-neftaliem) and National Science Foundation Graduate Research Fellow. I'm co-advised by Profs. [Chris Field](https://fieldlab.stanford.edu/) and [Rob Jackson](https://jacksonlab.stanford.edu/), and I'm also a member of Prof. [Nicole Ardoin's Social Ecology Lab](https://socialecology.stanford.edu/).
+<section class="home-hero">
 
-<br>
+  <div class="home-hero__content">
 
-My Research
-======
-As we anticipate rapid urbanization globally under increasing climate instability, my dissertation aims to better understand and mitigate the social and ecological challenges observed in cities. 
+    <p class="home-eyebrow">Climate + Cities</p>
 
+    <h1>Leona Neftaliem</h1>
 
-Urban sustainability challenges are incredibly complex, broad, and interdisciplinary; I aim to showcase the diversity of urban ecosystems within my proposed
-chapters. 
+    <p class="home-subtitle">
+      PhD Candidate at Stanford University
+    </p>
 
-I approach these topics by integrating remote sensing, quantitative surveys, and innovative environmental engineering techniques at different scales and in different cities.
+    <p class="home-intro">
+      I'm an interdisciplinary environmental researcher studying how environmental
+      change shapes cities and the people who live in them.
+    </p>
 
-You can find one of my current projects, in collaboration with [EJJI](https://www.ejji.org) and the Smithsonian Environmental Research Center, [here](https://serc.si.edu/participatory-science/projects/breathe-baltimore-air-quality-monitoring-project)!
+    <div class="home-links">
+      <a href="#work">Selected Work</a>
+      <a href="/files/CV_LN.pdf">CV</a>
+      <a href="https://www.linkedin.com/in/leona-neftaliem">LinkedIn</a>
+    </div>
 
-![Charming Vignettes by Taylor Smith-Hams](/images/charming_vignettes.jpeg)
-[Charming Vignettes by Taylor Smith-Hams](http://www.taylorsmithhams.com/charming-vignettes.html)
+  </div>
 
-<br>
+  <div class="home-hero__photo">
+    <img src="{{ "/images/LN_KH_copy.png" | relative_url }}" alt="Portrait of Leona Neftaliem">
+  </div>
 
-Selected Research Experience
-====== 
-<img src="/images/serc_field.jpg" alt="Leona in the field!" style="float: right; width: 400px;">
+</section>
 
+<section class="home-section" id="about">
+  <div class="section-heading">
+    <p class="section-eyebrow">About</p>
+  </div>
 
-Previously, I worked as a research technician at the Smithsonian Environmental Research Center. Specifically, I worked in the [Technology in Ecology Lab](https://serc.si.edu/labs/technology-in-ecology), designing technologically innovative climate change experiments and developing novel low-cost sensors to monitor diverse environmental phenomena. 
+  <div class="home-about">
+    <p>My research looks at environmental change across multiple scales, from mapping urban forests with satellite imagery, to measuring neighborhood air pollution, to studying how climate risk and people's relationships with place shape decisions about where to live.</p>
 
-You can find the Technology in Ecology projects that I worked on [here](https://serc.si.edu/labs/technology-in-ecology/projects)!
+    <p>Across these projects, I'm especially interested in how research can be useful beyond academia: how evidence is communicated, how communities and practitioners shape the questions being asked, and how institutions decide which ideas and programs to support.</p>
 
-<img src="/images/si_logo_1.png" alt="Smithsonian Environmental Research Center logo" style="display: block; margin: 0 auto; width: 200px;">
+    <p>I'm a PhD candidate in Stanford University's Emmett Interdisciplinary Program in Environment and Resources (E-IPER), advised by Chris Field and Rob Jackson. I'm also a Knight-Hennessy Scholar and National Science Foundation Graduate Research Fellow.</p>
+  </div>
+</section>
 
+<section class="home-section" id="work">
+  <div class="section-heading">
+    <h2>Selected Work</h2>
+  </div>
 
+  <div class="project-grid">
+    {% assign featured_projects = site.portfolio | where: "featured", true | sort: "order" %}
+    {% for project in featured_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
+<section class="home-section home-writing">
+  <div class="section-heading">
+    <p class="section-eyebrow">Writing + Research</p>
+    <h2>Selected Writing</h2>
+  </div>
 
+  <div class="writing-list">
+    <a class="writing-item" href="https://knight-hennessy.stanford.edu/news/breathing-life-ghost-towns-harnessing-promise-eu1-homes">
+      <h3>Breathing Life into Ghost Towns: Harnessing the Promise of €1 Homes</h3>
+      <p class="writing-item__meta">Knight-Hennessy Scholar Insights · October 2024</p>
+    </a>
+    <a class="writing-item" href="https://law.stanford.edu/wp-content/uploads/2023/07/Measuring-the-Carbon-and-Other-Benefits-of-Climate-Smart-Forestry-Practices.pdf">
+      <h3>Measuring the Carbon (and Other) Benefits of Climate-Smart Forestry Practices</h3>
+      <p class="writing-item__meta">Stanford Law School Policy Lab · July 2023</p>
+    </a>
+  </div>
+
+  <a href="/publications/" class="text-link">View publications and writing →</a>
+</section>

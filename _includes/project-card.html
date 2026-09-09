@@ -1,0 +1,39 @@
+<article class="project-card">
+
+  {% if include.project.image %}
+    <div class="project-card__image{% if include.project.image_fit == 'contain' %} project-card__image--contain{% endif %}">
+      <img
+        src="{{ include.project.image | relative_url }}"
+        alt="{{ include.project.image_alt | default: '' }}"
+        loading="lazy"
+      >
+    </div>
+    {% if include.project.image_credit %}
+      <p class="project-card__credit">{{ include.project.image_credit }}</p>
+    {% endif %}
+  {% endif %}
+
+  <div class="project-card__content">
+
+    <h3>{{ include.project.title }}</h3>
+
+    {% if include.project.status %}
+      <p class="project-card__status">
+        <em>{{ include.project.status }}</em>
+      </p>
+    {% endif %}
+
+    <div class="project-card__description">
+      {{ include.project.content }}
+    </div>
+
+    {% if include.project.skills %}
+      <p class="project-card__skills">
+        {{ include.project.skills }}
+      </p>
+    {% endif %}
+
+  </div>
+
+</article>
+
