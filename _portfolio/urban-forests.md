@@ -1,12 +1,11 @@
 ---
 title: "Mapping Urban Forests Across North American Cities"
 collection: portfolio
-category: "Climate + Cities"
 status: "Manuscript under review"
 order: 1
 featured: true
 skills: "Remote sensing · Deep learning · Urban ecology · Environmental equity"
 ---
 
-Developed a deep learning framework to map individual tree crowns from high-resolution satellite imagery across four North American cities. The work examines how tree abundance, canopy cover, and crown size vary across neighborhoods, revealing dimensions of urban forest inequity that conventional inventories and aggregate canopy measures can miss.
+Urban forests are critical for climate adaptation and human health, but cities often lack detailed information about where trees are, how large they are, and who has access to their benefits. In collaboration with NASA Goddard Space Flight Center, my work uses deep learning and high-resolution satellite imagery to map individual tree crowns across four North American cities, providing a more complete picture of urban forests and revealing dimensions of inequity that conventional inventories and canopy measures can miss.
 
