@@ -3,7 +3,6 @@ title: "Community Air Quality in Baltimore"
 collection: portfolio
 category: "Communities + Environment"
 status: "Manuscript under review"
-image: "/images/projects/baltimore.jpg"
 order: 2
 featured: true
 skills: "Community partnerships · Environmental justice · Air quality · Spatial analysis"
