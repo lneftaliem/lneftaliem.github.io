@@ -10,23 +10,31 @@ redirect_from:
 
 <section class="home-hero">
 
-  <p class="home-eyebrow">Climate + Cities</p>
+  <div class="home-hero__content">
 
-  <h1>Leona Neftaliem</h1>
+    <p class="home-eyebrow">Climate + Cities</p>
 
-  <p class="home-subtitle">
-    PhD Candidate at Stanford University
-  </p>
+    <h1>Leona Neftaliem</h1>
 
-  <p class="home-intro">
-    I'm an interdisciplinary environmental researcher studying how environmental
-    change shapes cities and the people who live in them.
-  </p>
+    <p class="home-subtitle">
+      PhD Candidate at Stanford University
+    </p>
 
-  <div class="home-links">
-    <a href="#work">Selected Work</a>
-    <a href="/files/CV_LN.pdf">CV</a>
-    <a href="https://www.linkedin.com/in/leona-neftaliem">LinkedIn</a>
+    <p class="home-intro">
+      I'm an interdisciplinary environmental researcher studying how environmental
+      change shapes cities and the people who live in them.
+    </p>
+
+    <div class="home-links">
+      <a href="#work">Selected Work</a>
+      <a href="/files/CV_LN.pdf">CV</a>
+      <a href="https://www.linkedin.com/in/leona-neftaliem">LinkedIn</a>
+    </div>
+
+  </div>
+
+  <div class="home-hero__photo">
+    <img src="{{ "/images/LN_KH_copy.png" | relative_url }}" alt="Portrait of Leona Neftaliem">
   </div>
 
 </section>
@@ -77,4 +85,3 @@ redirect_from:
 
   <a href="/publications/" class="text-link">View publications and writing →</a>
 </section>
-
