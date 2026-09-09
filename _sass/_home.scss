@@ -154,7 +154,7 @@
 .project-card__image {
   overflow: hidden;
   aspect-ratio: 4 / 3;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.5rem;
   background: $lighter-gray;
   border-radius: $border-radius;
 }
@@ -164,6 +164,23 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Maps, flyers, and other designed graphics: preserve the whole image
+   rather than cropping it to fill a fixed frame. */
+.project-card__image--contain {
+  aspect-ratio: auto;
+}
+
+.project-card__image--contain img {
+  height: auto;
+  object-fit: contain;
+}
+
+.project-card__credit {
+  font-size: 0.78rem;
+  color: $gray;
+  margin: 0 0 1.3rem;
 }
 
 .project-card h3 {
