@@ -1,12 +1,14 @@
 ---
 title: "Community Air Quality in Baltimore"
 collection: portfolio
-category: "Communities + Environment"
 status: "Manuscript under review"
 order: 2
 featured: true
+image: "/images/projects/baltimore.jpg"
+image_alt: "A low-cost air quality sensor deployed in the field, mounted on a fence in a Baltimore park."
+image_credit: "Photo: Lydia LaGorga"
 skills: "Community partnerships · Environmental justice · Air quality · Spatial analysis"
 ---
 
-Built a neighborhood-scale air quality monitoring network with the Environmental Justice Journalism Initiative and Smithsonian Environmental Research Center to examine how pollution and heat vary across Baltimore. The project combines community-engaged monitoring with spatial analysis to identify environmental inequalities that coarser datasets can overlook.
+Neighborhood-level differences in air pollution are difficult to capture with conventional monitoring networks. In partnership with the Environmental Justice Journalism Initiative and Smithsonian Environmental Research Center, we built a community-based network of low-cost sensors across Baltimore to understand how pollution and heat vary across neighborhoods and over time. The project shows why that local resolution matters: environmental inequalities can shift across seasons and disappear when data are averaged across larger areas or longer periods.
 
