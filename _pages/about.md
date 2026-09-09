@@ -47,7 +47,6 @@ redirect_from:
 
 <section class="home-section" id="work">
   <div class="section-heading">
-    <p class="section-eyebrow">Portfolio</p>
     <h2>Selected Work</h2>
   </div>
 
@@ -56,18 +55,6 @@ redirect_from:
     {% for project in featured_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
-  </div>
-</section>
-
-<section class="home-section" id="beyond">
-  <div class="section-heading">
-    <p class="section-eyebrow">Beyond Research</p>
-  </div>
-
-  <div class="home-about">
-    <p>I'm interested in how environmental knowledge becomes useful outside academia. Alongside my research, I've worked across public education, policy engagement, interdisciplinary convening, and community partnership.</p>
-
-    <p>My work has included developing environmental science programming with the California Academy of Sciences, contributing to policy-facing scientific review through the IPCC and United Nations, convening researchers and practitioners around urban development, and working with community organizations on environmental monitoring and public health.</p>
   </div>
 </section>
 
