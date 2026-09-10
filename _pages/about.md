@@ -55,7 +55,7 @@ redirect_from:
     </div>
 
     <figure class="home-about__photo">
-      <img src="{{ "/images/site-uploads/kh-graduation.jpg" | relative_url }}" alt="Leona Neftaliem with four fellow Knight-Hennessy Scholars at their Stanford graduation, standing outdoors in front of a wood-clad building surrounded by trees.">
+      <img src="{{ "/images/site-uploads/kh_061126_0171_9M7A6826.jpg" | relative_url }}" alt="Leona Neftaliem with four fellow Knight-Hennessy Scholars at their Stanford graduation, standing outdoors in front of a wood-clad building surrounded by trees.">
       <figcaption>Knight-Hennessy Scholars graduation at Stanford, June 2026. Photo: Micaela Go / Knight-Hennessy Scholars</figcaption>
     </figure>
   </div>
