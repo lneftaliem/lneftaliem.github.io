@@ -3,7 +3,7 @@ title: "Environmental Science in Policy"
 collection: portfolio
 order: 6
 featured: true
-image: "/images/projects/policy-engagement.jpg"
+image: "/images/site-uploads/policy-engagement.jpg"
 image_alt: "Group photo of fellows in Stanford's Rising Environmental Leaders Program on the steps of a capitol building."
 image_credit: "Photo: Rising Environmental Leaders Program"
 skills: "Policy engagement · Evidence synthesis · Scientific review"
