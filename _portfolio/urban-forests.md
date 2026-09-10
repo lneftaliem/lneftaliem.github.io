@@ -6,7 +6,7 @@ order: 1
 featured: true
 embed: "/images/site-uploads/cupertino_trees_map.html"
 embed_title: "Interactive map of 52,720 mapped tree crowns across Cupertino, CA"
-embed_caption: "Explore tree size and neighborhood income across Cupertino, California, one of four cities in the study. Hover over the map to explore the data."
+embed_caption: "Discover how tree size and neighborhood income vary across Cupertino, California, one of four cities in the study. Hover over the map to explore the data."
 skills: "Remote sensing · Deep learning · Urban ecology · Environmental equity"
 ---
 

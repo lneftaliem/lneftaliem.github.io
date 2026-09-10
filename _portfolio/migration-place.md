@@ -7,7 +7,7 @@ featured: true
 embed: "/images/site-uploads/Survey%20Map%20(standalone).html"
 embed_title: "Interactive map of survey coverage across 433 U.S. cities"
 embed_fit: true
-embed_caption: "Explore the 433 U.S. cities included in our national survey of urban environments, sense of place, and migration. Hover to explore cities across the country."
+embed_caption: "Explore the 433 U.S. cities included in our national survey of urban environments, sense of place, and migration."
 skills: "Survey research · Climate adaptation · Sense of place · Migration"
 ---
 
