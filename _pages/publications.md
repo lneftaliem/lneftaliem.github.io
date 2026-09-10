@@ -12,11 +12,11 @@ Selected academic research, policy writing, and public-facing work on cities, cl
 
 ## Peer-Reviewed Research
 
-Neftaliem, L., et al. Mapping tree crowns across four North American cities. *Manuscript in review.*
+<div style="padding-left: 2em; text-indent: -2em; margin-bottom: 1em;">Neftaliem, L., et al. Mapping tree crowns across four North American cities. <em>Manuscript in review.</em></div>
 
-Neftaliem, L., et al. Pollution inequity and social vulnerability in Baltimore, Maryland. *Manuscript in review.*
+<div style="padding-left: 2em; text-indent: -2em; margin-bottom: 1em;">Neftaliem, L., et al. Pollution inequity and social vulnerability in Baltimore, Maryland. <em>Manuscript in review.</em></div>
 
-Neftaliem, L., et al. Urban Greenspaces, Sense of Place, and Migration Intentions in Climate-Vulnerable U.S. Cities. *Manuscript in preparation.*
+<div style="padding-left: 2em; text-indent: -2em; margin-bottom: 1em;">Neftaliem, L., et al. Urban Greenspaces, Sense of Place, and Migration Intentions in Climate-Vulnerable U.S. Cities. <em>Manuscript in preparation.</em></div>
 
 {% assign pubs = site.publications | reverse %}
 {% if pubs.size > 0 %}
