@@ -12,15 +12,69 @@
       <p class="project-card__credit">{{ include.project.image_credit }}</p>
     {% endif %}
   {% elsif include.project.embed %}
-    <div class="project-card__image project-card__image--embed">
+    <div class="project-card__image project-card__image--embed{% if include.project.embed_fit %} project-card__image--embed-fit{% endif %}">
       <iframe
         src="{{ include.project.embed | relative_url }}"
         title="{{ include.project.embed_title | default: include.project.title }}"
         loading="lazy"
+        {% if include.project.embed_fit %}onload="fitEmbeddedMap(this)"{% endif %}
       ></iframe>
     </div>
     {% if include.project.embed_caption %}
       <p class="project-card__caption">{{ include.project.embed_caption }}</p>
+    {% endif %}
+    {% if include.project.embed_fit %}
+      <script>
+        // Scales a same-origin embedded page down so its full content fits
+        // inside the fixed-aspect project card box, rather than letting the
+        // iframe clip it. Iteratively adjusts the iframe's intrinsic width
+        // so the embedded page's own responsive layout settles at roughly
+        // the same aspect ratio as the card box, minimizing empty space,
+        // then scales the whole thing down to fit exactly.
+        function fitEmbeddedMap(iframe) {
+          function measureAt(w) {
+            iframe.style.transform = 'none';
+            iframe.style.width = w + 'px';
+            var doc = iframe.contentDocument;
+            if (!doc || !doc.body) return 0;
+            return Math.max(doc.documentElement.scrollHeight, doc.body.scrollHeight);
+          }
+          function apply() {
+            try {
+              var box = iframe.parentElement;
+              var rect = box.getBoundingClientRect();
+              var boxW = rect.width, boxH = rect.height;
+              if (!boxW || !boxH) return;
+              var targetAspect = boxW / boxH;
+              var w = boxW;
+              var h = measureAt(w);
+              if (!h) return;
+              for (var i = 0; i < 4; i++) {
+                var aspect = w / h;
+                if (Math.abs(aspect - targetAspect) < 0.02) break;
+                w = Math.min(Math.max(w * (targetAspect / aspect), 200), 1600);
+                h = measureAt(w);
+                if (!h) return;
+              }
+              var scale = boxH / h;
+              iframe.style.width = w + 'px';
+              iframe.style.height = h + 'px';
+              iframe.style.transform = 'scale(' + scale + ')';
+            } catch (e) {}
+          }
+          apply();
+          window.addEventListener('resize', apply);
+          setTimeout(apply, 600);
+          setTimeout(apply, 1500);
+          try {
+            var doc = iframe.contentDocument;
+            if (doc && doc.body && 'MutationObserver' in window) {
+              var mo = new MutationObserver(function () { apply(); });
+              mo.observe(doc.body, { childList: true, subtree: true, attributes: true });
+            }
+          } catch (e) {}
+        }
+      </script>
     {% endif %}
   {% endif %}
 
@@ -47,4 +101,5 @@
   </div>
 
 </article>
+
 
