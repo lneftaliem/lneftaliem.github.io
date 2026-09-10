@@ -11,6 +11,17 @@
     {% if include.project.image_credit %}
       <p class="project-card__credit">{{ include.project.image_credit }}</p>
     {% endif %}
+  {% elsif include.project.embed %}
+    <div class="project-card__image project-card__image--embed">
+      <iframe
+        src="{{ include.project.embed | relative_url }}"
+        title="{{ include.project.embed_title | default: include.project.title }}"
+        loading="lazy"
+      ></iframe>
+    </div>
+    {% if include.project.image_credit %}
+      <p class="project-card__credit">{{ include.project.image_credit }}</p>
+    {% endif %}
   {% endif %}
 
   <div class="project-card__content">
