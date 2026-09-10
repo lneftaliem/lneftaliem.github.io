@@ -6,7 +6,7 @@ order: 2
 featured: true
 embed: "/images/site-uploads/index.html"
 embed_title: "Interactive map of the Baltimore community air quality monitoring network"
-embed_caption: "A snapshot of air quality, temperature, and social vulnerability across our 15-site Baltimore monitoring network using sample data from June 2025. Select a station to explore local conditions and trends."
+embed_caption: "View June 2025 air quality and temperature data across our 15-site Baltimore network."
 embed_fit: true
 skills: "Community partnerships · Environmental justice · Air quality · Spatial analysis"
 ---
