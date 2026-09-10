@@ -25,12 +25,12 @@
     {% endif %}
     {% if include.project.embed_fit %}
       <script>
-        // Scales a same-origin embedded page down so its full content fits
-        // inside the fixed-aspect project card box, rather than letting the
-        // iframe clip it. Iteratively adjusts the iframe's intrinsic width
-        // so the embedded page's own responsive layout settles at roughly
-        // the same aspect ratio as the card box, minimizing empty space,
-        // then scales the whole thing down to fit exactly.
+        /* Scales a same-origin embedded page down so its full content fits
+           inside the fixed-aspect project card box, rather than letting the
+           iframe clip it. Iteratively adjusts the iframe's intrinsic width
+           so the embedded page's own responsive layout settles at roughly
+           the same aspect ratio as the card box, minimizing empty space,
+           then scales the whole thing down to fit exactly. */
         function fitEmbeddedMap(iframe) {
           function measureAt(w) {
             iframe.style.transform = 'none';
@@ -101,5 +101,6 @@
   </div>
 
 </article>
+
 
 
