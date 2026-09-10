@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Leaflet & Chart.js -->
+    <!-- Leaflet, MapLibre GL (Carto basemap) & Chart.js -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="styles.css">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@3.6.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.1.2/leaflet-maplibre-gl.js"></script>
 </head>
 <body>
 
@@ -56,7 +58,6 @@
                     <div class="metric-box">
                         <div class="metric-val" id="val-ozone">--</div>
                         <div class="metric-label">Ozone (ppb)</div>
-                    </div>
                 </div>
 
                 <div style="font-size:0.78rem; color:#94A3B8; line-height:1.4; border-top:1px solid rgba(255,255,255,0.06); padding-top:0.5rem;">
