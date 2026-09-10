@@ -199,13 +199,9 @@
 }
 
 /* Maps, flyers, and other designed graphics: preserve the whole image
-   rather than cropping it to fill a fixed frame. */
-.project-card__image--contain {
-  aspect-ratio: auto;
-}
-
+   rather than cropping it, but keep the same fixed-size frame as every
+   other project card so all Selected Work images line up uniformly. */
 .project-card__image--contain img {
-  height: auto;
   object-fit: contain;
 }
 
