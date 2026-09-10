@@ -37,10 +37,21 @@ function initMap() {
 
     // Carto's OpenStreetMap-based Dark Matter basemap, rendered via MapLibre GL
     // (same vector basemap style used by the Cupertino trees map).
-    L.maplibreGL({
+    const basemapLayer = L.maplibreGL({
         style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
         attribution: '&copy; OpenStreetMap &copy; CARTO'
     }).addTo(leafletMap);
+
+    // The GL layer can finish initializing before its vector style has
+    // loaded, which sometimes leaves it painted but without ever kicking
+    // off the actual tile requests. Forcing a resize once the style is
+    // ready reliably triggers that first tile load.
+    const glMap = basemapLayer.getMaplibreMap();
+    if (glMap.isStyleLoaded()) {
+        glMap.resize();
+    } else {
+        glMap.once('load', () => glMap.resize());
+    }
 
     renderMapMarkers();
 }
