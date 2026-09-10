@@ -5,7 +5,7 @@ order: 4
 featured: true
 image: "/images/site-uploads/bacs_with_sponsors.png"
 image_alt: "Title graphic for Stanford's inaugural Building Africa's Cities Summit, with a blue accent swoosh beneath the title and the logos of seven partner organizations."
-image_credit: "Summit promotional graphic<br>Design: Leona Neftaliem"
+image_credit: "Summit promotional graphic.<br>Design: Leona Neftaliem"
 image_fit: "contain"
 image_background: "#f1efeb"
 skills: "Program development · Fundraising · Partnerships · Convening"
