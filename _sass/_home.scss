@@ -16,13 +16,13 @@
 }
 
 .home {
-  max-width: 1240px;
+  max-width: 1320px;
   margin: 0 auto;
   padding-left: 1em;
   padding-right: 1em;
 
   @include breakpoint($x-large) {
-    max-width: 1320px;
+    max-width: 1400px;
   }
 }
 
@@ -197,13 +197,13 @@
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.75rem 2.5rem;
+  gap: 3rem 2.75rem;
 
   @include breakpoint($medium) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  @media (min-width: 1080px) {
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -251,6 +251,13 @@
 
 .project-card__credit {
   font-size: 0.78rem;
+  color: $gray;
+  margin: 0 0 1.3rem;
+}
+
+.project-card__caption {
+  font-size: 0.85rem;
+  line-height: 1.55;
   color: $gray;
   margin: 0 0 1.3rem;
 }
@@ -381,4 +388,5 @@
     padding: 3rem 0;
   }
 }
+
 
