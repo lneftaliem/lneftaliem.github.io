@@ -29,12 +29,13 @@ redirect_from:
       <a href="#work">Selected Work</a>
       <a href="/files/CV_LN.pdf">CV</a>
       <a href="https://www.linkedin.com/in/leona-neftaliem">LinkedIn</a>
+      <a href="https://github.com/lneftaliem">GitHub</a>
     </div>
 
   </div>
 
   <div class="home-hero__photo">
-    <img src="{{ "/images/LN_KH_copy.png" | relative_url }}" alt="Portrait of Leona Neftaliem">
+    <img src="{{ "/images/LN_KH.png" | relative_url }}" alt="Portrait of Leona Neftaliem">
   </div>
 
 </section>
