@@ -3,7 +3,7 @@ title: "Building Africa's Cities Summit"
 collection: portfolio
 order: 4
 featured: true
-image: "/images/projects/africa-cities.jpg"
+image: "/images/site-uploads/africa-cities.jpg"
 image_alt: "Title graphic for Stanford's inaugural Building Africa's Cities Summit, with a blue accent swoosh beneath the title."
 image_credit: "Design: Leona Neftaliem"
 image_fit: "contain"
