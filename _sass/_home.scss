@@ -134,6 +134,10 @@
   padding-top: 0;
 }
 
+#about .section-eyebrow {
+  font-size: 1.05rem;
+}
+
 .section-heading {
   margin-bottom: 2rem;
 
@@ -157,9 +161,13 @@
   align-items: start;
 
   @include breakpoint($large) {
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    /* The text column is a fixed pixel width, sized so this photo's
+       left edge lands exactly where the hero photo's left edge does
+       (hero max-width 1080px minus its 240px photo). The photo column
+       (auto width) keeps rendering at essentially its previous size. */
+    grid-template-columns: minmax(0, 782px) minmax(240px, 1fr);
     gap: 3.25rem;
-    max-width: 1040px;
+    max-width: 1267px;
   }
 }
 
@@ -263,17 +271,29 @@
   transform-origin: top left;
 }
 
+/* A credit line is always one line; a caption can run to two. Reserving
+   the same two-line-tall slot for both keeps every card's title starting
+   on the same line, whether it sits under a photo credit or a map
+   caption (matching the alignment of the Public Science / Policy row). */
+.project-card__credit,
+.project-card__caption {
+  min-height: 2.7rem;
+  margin: 0 0 1.3rem;
+}
+
 .project-card__credit {
   font-size: 0.78rem;
   color: $gray;
-  margin: 0 0 1.3rem;
 }
 
 .project-card__caption {
   font-size: 0.85rem;
   line-height: 1.55;
   color: $gray;
-  margin: 0 0 1.3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-card h3 {

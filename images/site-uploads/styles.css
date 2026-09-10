@@ -33,7 +33,7 @@ html, body {
 
 /* Header */
 .widget-header {
-    padding: 1.1rem 1.25rem 0.9rem;
+    padding: 0.75rem 1.25rem 0.6rem;
     border-bottom: 1px solid var(--panel-border);
 }
 
@@ -52,12 +52,12 @@ html, body {
 /* Map + side panel */
 .widget-body {
     display: flex;
-    min-height: 380px;
+    min-height: 300px;
 }
 
 #map {
     flex: 1 1 auto;
-    min-height: 380px;
+    min-height: 300px;
     background: var(--panel-bg);
 }
 
@@ -81,14 +81,14 @@ html, body {
     flex: 0 0 240px;
     background: var(--panel-bg);
     border-left: 1px solid var(--panel-border);
-    padding: 1.1rem 1.1rem;
+    padding: 0.85rem 1.1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 0.65rem;
 }
 
 .sensor-info-header {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.55rem;
     border-bottom: 1px solid var(--panel-border);
 }
 
@@ -107,14 +107,14 @@ html, body {
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem;
+    gap: 0.45rem;
 }
 
 .metric-box {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--panel-border);
     border-radius: 8px;
-    padding: 0.6rem 0.5rem;
+    padding: 0.45rem 0.4rem;
     text-align: center;
 }
 
@@ -133,7 +133,7 @@ html, body {
 
 /* Time series chart */
 .chart-wrapper {
-    padding: 1rem 1.25rem 1.15rem;
+    padding: 0.6rem 1.25rem 0.7rem;
     border-top: 1px solid var(--panel-border);
 }
 
@@ -141,7 +141,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .chart-title {
@@ -166,7 +166,7 @@ html, body {
 
 .chart-canvas-container {
     position: relative;
-    height: 220px;
+    height: 100px;
     width: 100%;
 }
 
