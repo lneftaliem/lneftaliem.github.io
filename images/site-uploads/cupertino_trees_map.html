@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupertino Trees Map</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- MapLibre GL & Deck.gl -->
+    <link href="https://unpkg.com/maplibre-gl@3.6.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@3.6.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/deck.gl@8.9.33/dist.min.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --panel-bg: rgba(15, 23, 42, 0.82);
+            --panel-border: rgba(255, 255, 255, 0.12);
+            --primary: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+        }
+
+        #map-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        #deck-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Top Left Header Badge */
+        .brand-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--panel-border);
+            padding: 12px 18px;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-badge h1 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand-badge h1 i {
+            color: var(--primary);
+        }
+
+        .brand-badge .count-tag {
+            font-size: 0.75rem;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--primary);
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: 600;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        /* Top Right Layer Selector */
+        .layer-floating-card {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--panel-border);
+            padding: 6px;
+            border-radius: var(--radius);
+            display: flex;
+            gap: 4px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        .btn-layer {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-layer:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .btn-layer.active {
+            background: var(--primary);
+            color: #052e16;
+            font-weight: 600;
+        }
+
+        /* Bottom Right Legend */
+        .legend-card {
+            position: absolute;
+            bottom: 24px;
+            right: 20px;
+            z-index: 10;
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--panel-border);
+            padding: 14px 16px;
+            border-radius: var(--radius);
+            width: 220px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        .legend-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .legend-ramp {
+            height: 8px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        /* Minimal Tooltip */
+        #custom-tooltip {
+            position: absolute;
+            z-index: 30;
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid var(--panel-border);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            padding: 10px 14px;
+            pointer-events: none;
+            font-size: 0.8rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            display: none;
+        }
+
+        #custom-tooltip h4 {
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-bottom: 4px;
+        }
+
+        .tooltip-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            color: #cbd5e1;
+            margin: 2px 0;
+        }
+
+        /* Loading Screen Overlay */
+        #loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            transition: opacity 0.4s ease;
+        }
+
+        .spinner {
+            width: 36px;
+            height: 36px;
+            border: 3px solid rgba(16, 185, 129, 0.2);
+            border-top: 3px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 12px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+        <div style="font-size:0.95rem; font-weight:500;">Loading Map...</div>
+    </div>
+
+    <div id="map-container">
+        <!-- Top Left Brand Badge -->
+        <div class="brand-badge">
+            <h1><i class="fa-solid fa-tree"></i> Cupertino Trees</h1>
+            <span class="count-tag">52,720 trees</span>
+        </div>
+
+        <!-- Top Right Layer Selector -->
+        <div class="layer-floating-card">
+            <button class="btn-layer active" onclick="setLayerMode('trees', this)">
+                <i class="fa-solid fa-circle-dot"></i> Trees
+            </button>
+            <button class="btn-layer" onclick="setLayerMode('heatmap', this)">
+                <i class="fa-solid fa-fire"></i> Density
+            </button>
+            <button class="btn-layer" onclick="setLayerMode('income', this)">
+                <i class="fa-solid fa-sack-dollar"></i> Income
+            </button>
+        </div>
+
+        <!-- Bottom Right Legend -->
+        <div class="legend-card">
+            <div class="legend-title" id="legend-title">Canopy Size (px)</div>
+            <div class="legend-ramp" id="legend-ramp" style="background: linear-gradient(to right, #10b981, #34d399, #fbbf24, #f97316, #ef4444);"></div>
+            <div class="legend-labels">
+                <span id="legend-min">1 px</span>
+                <span id="legend-max">150+ px</span>
+            </div>
+        </div>
+
+        <!-- Tooltip -->
+        <div id="custom-tooltip"></div>
+
+        <!-- Deck.gl Canvas -->
+        <div id="deck-canvas"></div>
+    </div>
+
+    <script>
+        let treeData = [];
+        let deckInstance = null;
+        let mapInstance = null;
+        let activeLayerMode = 'trees';
+
+        const DATA_URL = './cupertino_trees_data.json';
+
+        function getTreeColor(crown) {
+            if (crown < 10) return [16, 185, 129, 200];
+            if (crown < 30) return [52, 211, 153, 220];
+            if (crown < 70) return [251, 191, 36, 230];
+            if (crown < 150) return [249, 115, 22, 230];
+            return [239, 68, 68, 240];
+        }
+
+        function getIncomeColor(income) {
+            if (!income) return [100, 116, 139, 150];
+            const norm = Math.min(Math.max((income - 134000) / (248000 - 134000), 0), 1);
+            return [
+                Math.round(59 + norm * (234 - 59)),
+                Math.round(130 + norm * (179 - 130)),
+                Math.round(246 - norm * (246 - 8)),
+                210
+            ];
+        }
+
+        async function initApp() {
+            try {
+                mapInstance = new maplibregl.Map({
+                    container: 'deck-canvas',
+                    style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+                    center: [-122.032, 37.318],
+                    zoom: 12.8,
+                    pitch: 30,
+                    bearing: 0,
+                    interactive: true
+                });
+
+                deckInstance = new deck.DeckGL({
+                    container: 'deck-canvas',
+                    map: maplibregl,
+                    initialViewState: {
+                        longitude: -122.032,
+                        latitude: 37.318,
+                        zoom: 12.8,
+                        pitch: 30,
+                        bearing: 0
+                    },
+                    controller: true,
+                    onViewStateChange: ({viewState}) => {
+                        mapInstance.jumpTo({
+                            center: [viewState.longitude, viewState.latitude],
+                            zoom: viewState.zoom,
+                            bearing: viewState.bearing,
+                            pitch: viewState.pitch
+                        });
+                    }
+                });
+
+                const res = await fetch(DATA_URL);
+                treeData = await res.json();
+
+                document.getElementById('loading-overlay').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loading-overlay').style.display = 'none';
+                }, 400);
+
+                updateLayer();
+
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        function setLayerMode(mode, btn) {
+            activeLayerMode = mode;
+            document.querySelectorAll('.btn-layer').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const ramp = document.getElementById('legend-ramp');
+            const title = document.getElementById('legend-title');
+            const minLbl = document.getElementById('legend-min');
+            const maxLbl = document.getElementById('legend-max');
+
+            if (mode === 'trees') {
+                title.innerText = 'Canopy Size (px)';
+                ramp.style.background = 'linear-gradient(to right, #10b981, #34d399, #fbbf24, #f97316, #ef4444)';
+                minLbl.innerText = '1 px';
+                maxLbl.innerText = '150+ px';
+            } else if (mode === 'heatmap') {
+                title.innerText = 'Tree Density';
+                ramp.style.background = 'linear-gradient(to right, rgba(0,0,255,0.4), cyan, lime, yellow, red)';
+                minLbl.innerText = 'Low';
+                maxLbl.innerText = 'High Cluster';
+            } else if (mode === 'income') {
+                title.innerText = 'Median Income';
+                ramp.style.background = 'linear-gradient(to right, #3b82f6, #06b6d4, #fbbf24, #f59e0b)';
+                minLbl.innerText = '$134k';
+                maxLbl.innerText = '$248k+';
+            }
+
+            updateLayer();
+        }
+
+        function updateLayer() {
+            let layers = [];
+
+            if (activeLayerMode === 'trees') {
+                layers.push(new deck.ScatterplotLayer({
+                    id: 'trees',
+                    data: treeData,
+                    getPosition: d => d.coordinates,
+                    getRadius: d => Math.max(Math.sqrt(d.crown_area) * 2.4, 3),
+                    getFillColor: d => getTreeColor(d.crown_area),
+                    radiusMinPixels: 2.5,
+                    radiusMaxPixels: 18,
+                    pickable: true,
+                    onHover: handleHover
+                }));
+            } else if (activeLayerMode === 'heatmap') {
+                layers.push(new deck.HeatmapLayer({
+                    id: 'heatmap',
+                    data: treeData,
+                    getPosition: d => d.coordinates,
+                    getWeight: d => Math.sqrt(d.crown_area),
+                    radiusPixels: 30,
+                    intensity: 1.4,
+                    threshold: 0.05
+                }));
+            } else if (activeLayerMode === 'income') {
+                layers.push(new deck.ScatterplotLayer({
+                    id: 'income',
+                    data: treeData,
+                    getPosition: d => d.coordinates,
+                    getRadius: d => Math.max(Math.sqrt(d.crown_area) * 2.2, 3),
+                    getFillColor: d => getIncomeColor(d.income),
+                    radiusMinPixels: 3,
+                    radiusMaxPixels: 16,
+                    pickable: true,
+                    onHover: handleHover
+                }));
+            }
+
+            deckInstance.setProps({ layers });
+        }
+
+        function handleHover(info) {
+            const tooltip = document.getElementById('custom-tooltip');
+            if (info.object) {
+                const d = info.object;
+                const incomeText = d.income ? '$' + Math.round(d.income).toLocaleString() : 'N/A';
+                
+                tooltip.innerHTML = `
+                    <h4><i class="fa-solid fa-tree"></i> Tree Info</h4>
+                    <div class="tooltip-row"><span>Crown Area:</span> <strong>${d.crown_area} px</strong></div>
+                    <div class="tooltip-row"><span>Block Group Income:</span> <strong>${incomeText}</strong></div>
+                `;
+                tooltip.style.left = `${info.x + 12}px`;
+                tooltip.style.top = `${info.y + 12}px`;
+                tooltip.style.display = 'block';
+            } else {
+                tooltip.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>
