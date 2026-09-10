@@ -31,14 +31,15 @@ function getVulnColor(cat) {
 function initMap() {
     leafletMap = L.map('map', {
         center: [39.2904, -76.6122],
-        zoom: 12,
+        zoom: 11,
         zoomControl: true
     });
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap &copy; CARTO',
-        subdomains: 'abcd',
-        maxZoom: 19
+    // Carto's OpenStreetMap-based Dark Matter basemap, rendered via MapLibre GL
+    // (same vector basemap style used by the Cupertino trees map).
+    L.maplibreGL({
+        style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+        attribution: '&copy; OpenStreetMap &copy; CARTO'
     }).addTo(leafletMap);
 
     renderMapMarkers();
@@ -78,6 +79,10 @@ function renderMapMarkers() {
     if (aqiData.sites.length > 0) {
         selectSite(aqiData.sites[0]);
     }
+
+    // Zoom/pan out so all monitoring sites are visible at once.
+    const bounds = L.latLngBounds(aqiData.sites.map(site => [site.latitude, site.longitude]));
+    leafletMap.fitBounds(bounds, { padding: [40, 40] });
 }
 
 function selectSite(site) {
