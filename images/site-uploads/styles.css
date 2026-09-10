@@ -1,0 +1,188 @@
+/* Baltimore AQI Sensor Network - Embeddable Widget Styles */
+
+:root {
+    --bg-dark: #0f172a;
+    --panel-bg: #111c34;
+    --panel-border: rgba(255, 255, 255, 0.08);
+    --primary: #6366f1;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-faint: #64748b;
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.widget-card {
+    width: 100%;
+    background: var(--bg-dark);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* Header */
+.widget-header {
+    padding: 1.1rem 1.25rem 0.9rem;
+    border-bottom: 1px solid var(--panel-border);
+}
+
+.header-title h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.header-title p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Map + side panel */
+.widget-body {
+    display: flex;
+    min-height: 380px;
+}
+
+#map {
+    flex: 1 1 auto;
+    min-height: 380px;
+    background: var(--panel-bg);
+}
+
+.leaflet-container {
+    background: var(--panel-bg);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background: rgba(15, 23, 42, 0.96);
+    color: var(--text-main);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.leaflet-popup-content {
+    margin: 10px 12px;
+}
+
+.sensor-side-panel {
+    flex: 0 0 240px;
+    background: var(--panel-bg);
+    border-left: 1px solid var(--panel-border);
+    padding: 1.1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.sensor-info-header {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--panel-border);
+}
+
+.sensor-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.sensor-type {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+}
+
+.metric-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+}
+
+.metric-val {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.metric-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+}
+
+/* Time series chart */
+.chart-wrapper {
+    padding: 1rem 1.25rem 1.15rem;
+    border-top: 1px solid var(--panel-border);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.chart-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.param-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--panel-border);
+    color: var(--text-main);
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    outline: none;
+}
+
+.param-select:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.chart-canvas-container {
+    position: relative;
+    height: 220px;
+    width: 100%;
+}
+
+/* Responsive: stack side panel below map on narrow embeds */
+@media (max-width: 620px) {
+    .widget-body {
+        flex-direction: column;
+    }
+
+    #map {
+        min-height: 300px;
+    }
+
+    .sensor-side-panel {
+        flex: none;
+        border-left: none;
+        border-top: 1px solid var(--panel-border);
+    }
+}
