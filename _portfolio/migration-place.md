@@ -4,6 +4,9 @@ collection: portfolio
 status: "Manuscript in preparation"
 order: 3
 featured: true
+embed: "/files/migration-survey-map.html"
+embed_title: "Interactive map of survey coverage across 433 U.S. cities"
+image_credit: "Map: Leona Neftaliem"
 skills: "Survey research · Climate adaptation · Sense of place · Migration"
 ---
 
