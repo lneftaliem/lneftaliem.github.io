@@ -197,14 +197,10 @@
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem 2.75rem;
+  gap: 3.5rem 3rem;
 
   @include breakpoint($medium) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -232,6 +228,10 @@
 /* Maps, flyers, and other designed graphics: preserve the whole image
    rather than cropping it, but keep the same fixed-size frame as every
    other project card so all Selected Work images line up uniformly. */
+.project-card__image--contain {
+  background: rgba($lighter-gray, 0.4);
+}
+
 .project-card__image--contain img {
   object-fit: contain;
 }
