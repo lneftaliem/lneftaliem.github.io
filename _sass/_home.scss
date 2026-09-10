@@ -249,6 +249,20 @@
   display: block;
 }
 
+/* Embeds whose own layout is taller than the card box (e.g. a page with a
+   header and legend above/below the visualization) are scaled down in
+   place via JS so the whole thing is visible rather than being clipped. */
+.project-card__image--embed-fit {
+  position: relative;
+}
+
+.project-card__image--embed-fit iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+
 .project-card__credit {
   font-size: 0.78rem;
   color: $gray;
@@ -388,5 +402,6 @@
     padding: 3rem 0;
   }
 }
+
 
 
