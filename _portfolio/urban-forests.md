@@ -1,5 +1,5 @@
 ---
-title: "Mapping Urban Trees Across North American Cities"
+title: "Mapping Urban Trees from Space"
 collection: portfolio
 status: "Manuscript under review"
 order: 1
