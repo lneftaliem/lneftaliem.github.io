@@ -2,7 +2,7 @@
 title: "Community-Engaged Air Quality Monitoring in Baltimore, MD"
 collection: portfolio
 status: "Manuscript under review"
-order: 2
+order: 3
 featured: true
 embed: "/images/site-uploads/index.html"
 embed_title: "Interactive map of the Baltimore community air quality monitoring network"
