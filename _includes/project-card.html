@@ -97,6 +97,11 @@
         {{ include.project.skills }}
       </p>
     {% endif %}
+      {% if include.project.link %}
+      <p class="project-card__link">
+          <a href="{{ include.project.link }}" class="text-link">{{ include.project.link_text | default: "Learn more →" }}</a>
+      </p>
+    {% endif %}
 
   </div>
 
