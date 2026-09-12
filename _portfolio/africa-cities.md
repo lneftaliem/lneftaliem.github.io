@@ -1,7 +1,7 @@
 ---
 title: "Building Africa's Cities Summit"
 collection: portfolio
-order: 4
+order: 5
 featured: true
 image: "/images/site-uploads/bacs_with_sponsors.png"
 image_alt: "Title graphic for Stanford's inaugural Building Africa's Cities Summit, with a blue accent swoosh beneath the title and the logos of seven partner organizations."
