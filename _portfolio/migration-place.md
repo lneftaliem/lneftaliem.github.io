@@ -2,7 +2,7 @@
 title: "Climate, Place, and Migration in U.S. Cities"
 collection: portfolio
 status: "Manuscript in preparation"
-order: 3
+order: 4
 featured: true
 embed: "/images/site-uploads/Survey%20Map%20(standalone).html"
 embed_title: "Interactive map of survey coverage across 433 U.S. cities"
