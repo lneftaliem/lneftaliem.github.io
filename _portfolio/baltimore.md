@@ -1,5 +1,5 @@
 ---
-title: "Community-Engaged Air Quality Monitoring in Baltimore, MD"
+title: "Baltimore Air Quality and Environmental Justice"
 collection: portfolio
 status: "Manuscript under review"
 order: 3
