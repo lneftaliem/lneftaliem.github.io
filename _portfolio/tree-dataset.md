@@ -1,5 +1,5 @@
 ---
-title: "Building a North American Urban Tree Public Dataset"
+title: "Open Data for Urban Trees"
 collection: portfolio
 order: 2
 featured: true
