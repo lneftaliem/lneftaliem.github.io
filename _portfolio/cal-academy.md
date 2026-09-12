@@ -1,7 +1,7 @@
 ---
 title: "Public Science at the California Academy of Sciences"
 collection: portfolio
-order: 5
+order: 6
 featured: true
 image: "/images/site-uploads/cal-academy.jpg"
 image_alt: "Museum visitors, including children, looking into a large kelp forest aquarium tank at the California Academy of Sciences."
