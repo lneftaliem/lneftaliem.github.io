@@ -49,7 +49,7 @@ redirect_from:
     <div class="home-about__text">
       <p>I'm currently a PhD candidate in Stanford University's Emmett Interdisciplinary Program in Environment and Resources (E-IPER), advised by <a href="https://fieldlab.stanford.edu">Chris Field</a> and <a href="https://jacksonlab.stanford.edu">Rob Jackson</a>, and a member of <a href="https://socialecology.stanford.edu">Nicole Ardoin's Social Ecology Lab</a>. I'm also a Knight-Hennessy Scholar and National Science Foundation Graduate Research Fellow.</p>
 
-      <p>My research looks at environmental change across multiple scales, from mapping urban forests with satellite imagery, to measuring neighborhood air pollution, to studying how climate risk and people's relationships with place shape decisions about where to live.</p>
+      <p>My research examines environmental change across multiple scales, from mapping urban forests with satellite imagery, to measuring neighborhood air pollution, to studying how climate risk and people's relationships with place shape decisions about where to live.</p>
 
       <p>Across this work, I'm especially interested in what makes environmental research useful beyond academia, from the questions we choose to ask and who helps shape them, to how findings are communicated and used.</p>
     </div>
