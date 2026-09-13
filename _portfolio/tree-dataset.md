@@ -1,6 +1,7 @@
 ---
 title: "Open Data for Urban Trees"
 collection: portfolio
+status: "Dataset released · 2023"
 order: 2
 featured: true
 embed: "/images/site-uploads/sf-street-trees-standalone.html"
