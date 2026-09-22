@@ -11,4 +11,4 @@ image_background: "#f1efeb"
 skills: "Program development · Fundraising · Partnerships · Convening"
 ---
 
-I helped launch Stanford's inaugural Building Africa's Cities Summit, which brought together researchers and practitioners working on housing, transportation, and urban governance in rapidly growing African cities. Alongside Khalid Osman, Dena Montague, Juliet Nwagwu Ume-Ezeoke, and Simi Aluko, I helped organize the convening and secure $37,000 in support from seven partner organizations.
+I helped launch Stanford's inaugural Building Africa's Cities Summit, which brought together researchers and practitioners working on housing, transportation, and urban governance in rapidly growing African cities. Alongside [Khalid Osman](https://engineering.stanford.edu/people/khalid-osman), [Dena Montague](https://earthsystems.stanford.edu/people/dena-montague), Juliet Nwagwu Ume-Ezeoke, and Simi Aluko, I helped organize the convening and secure $37,000 in support from seven partner organizations.
